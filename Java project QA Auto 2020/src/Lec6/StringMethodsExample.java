@@ -1,5 +1,7 @@
 package Lec6;
 
+import java.util.Objects;
+
 public class StringMethodsExample {
     public static void main(String[] args) {
 //        String userName = "oberezhniy";
@@ -50,13 +52,39 @@ public class StringMethodsExample {
 //        System.out.println(email);
 //        System.out.println(replacedEmail);
 
-        String username = "user12121";
-        String s = username.replace("1", "-").replace("2", "-");
+//        String username = "user12121";
+//        String s = username.replace("1", "-").replace("2", "-");
+//        System.out.println(s);
+//        String s2 = username.replaceAll("[0-9]", "-");
+//        System.out.println(s2);
+
+//        String welcomeMessage = "Hello, students!";
+//        char c = welcomeMessage.charAt(7);
+//        System.out.println(c);
+
+//        char[] chars = welcomeMessage.toCharArray();
+//        for (char letter: chars) {
+//            System.out.println(letter);
+//        }
+//
+//        String[] split = welcomeMessage.split(",");
+//        System.out.println(split.length);
+//        System.out.println(split[0]);
+//        System.out.println(split[1].trim());
+//
+//        String emptyString = " ";
+//        String emptyString = null;
+
+//        if (emptyString != null && emptyString.trim().isEmpty()) {
+//        if (!Objects.isNull(emptyString) && emptyString.trim().isEmpty()) {
+//            System.out.println("Empty string");
+//        }
+
+        String welcomeMessage = "Hello, students!";
+        String s = welcomeMessage.substring(5);
         System.out.println(s);
-        String s2 = username.replaceAll("[0-9]", "-");
+        String s2 = welcomeMessage.substring(0,5);
         System.out.println(s2);
-
-
     }
 
 }
